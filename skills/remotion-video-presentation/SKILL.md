@@ -19,12 +19,12 @@ description: |
 - 教学 / 产品演示 / keynote 电影感
 - B 站 / YouTube / 抖音视频内容
 
-**与 web-video-presentation 的核心区别**：
-- 产出是 MP4 而非网页（不用录屏）
-- 动画用 `useCurrentFrame` + `interpolate` 而非 CSS transition
+**核心特性**：
+- 直接输出 MP4，不用录屏
+- 动画用 `useCurrentFrame` + `interpolate`，帧级精确控制
 - 音频用 `<Audio>` + `staticFile()` 内嵌时间轴
-- 预览用 Remotion Studio 而非浏览器
-- 渲染用 `npx remotion render` 而非手动录屏
+- Remotion Studio 实时预览
+- `npx remotion render` 一键渲染
 
 ---
 
@@ -267,7 +267,7 @@ export const Scene0: React.FC = () => {
 
 ### 2.3 第 2~N 章 — 按选定模式
 
-三种模式（同 web-video-presentation）：
+三种模式：
 - **A) 逐章确认**：每章做完验收
 - **B) 顺序开发**：全部做完统一验收
 - **C) 并行开发**：Agent Teams 并行
@@ -331,7 +331,7 @@ npx remotion render src/index.ts FullVideo out/full-video.mp4 --browser-executab
 4. **Sequence 编排**：用 `<Sequence from={N} durationInFrames={M}>` 切分场景
 5. **音频同步**：`<Audio src={staticFile('audio/xxx.wav')} />` 放在对应 Sequence 内
 
-### 视觉规范（参照 web-design-engineer）
+### 视觉规范
 
 - **画布**：1920×1080 固定，无响应式
 - **字体**：≥ 24px（投影可读）
