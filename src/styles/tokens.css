@@ -1,0 +1,22 @@
+/* warm-terracotta theme — Anthropic 人文极简 */
+:root {
+  --c-bg: #FAF9F5;
+  --c-surface: #F3F1EC;
+  --c-text: #141413;
+  --c-text-dim: #B0AEA5;
+  --c-accent: #D97757;
+  --c-accent-dim: #C4674A;
+  --c-highlight: #6A9BCC;
+  --c-muted: #B0AEA5;
+  --c-border: #E0DDD6;
+  --c-green: #788C5D;
+  --c-gold: #D9A057;
+
+  --font-display: 'Poppins', 'Noto Sans SC', system-ui, sans-serif;
+  --font-body: 'Lora', 'Noto Serif SC', Georgia, serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+}

@@ -1,0 +1,6 @@
+node_modules/
+out/
+dist/
+*.mp4
+*.wav
+web-video-presentation-skill.md
